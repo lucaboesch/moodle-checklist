@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd">
+<svg version="1.1" baseProfile="basic" id="raw" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" xml:space="preserve">
+<g id="completion">
+	<path fill="#999999" d="M16,14c0,1.1-0.9,2-2,2H2c-1.1,0-2-0.9-2-2V2c0-1.1,0.9-2,2-2h12c1.1,0,2,0.9,2,2V14z"/>
+	<path fill="#FFFFFF" d="M14,12c0,1.104-0.896,2-2,2H4c-1.104,0-2-0.896-2-2V4c0-1.104,0.896-2,2-2h8c1.104,0,2,0.896,2,2V12z"/>
+	<g id="cross">
+		<path fill="#C88788" d="M12.732,4.033c0.389,0.389,0.389,1.025,0,1.415l-7.269,7.274c-0.389,0.389-1.024,0.388-1.412-0.002
+			l-0.709-0.712c-0.388-0.39-0.387-1.027,0.002-1.416l7.267-7.266c0.389-0.389,1.025-0.389,1.414,0L12.732,4.033z"/>
+		<path fill="#C88788" d="M3.328,4.033c-0.389,0.389-0.389,1.025,0,1.415l7.214,7.22c0.389,0.389,1.025,0.39,1.415,0.001l0.71-0.708
+			c0.39-0.389,0.39-1.024,0.001-1.413L5.449,3.326c-0.389-0.389-1.025-0.389-1.414,0L3.328,4.033z"/>
+	</g>
+</g>
+</svg>
