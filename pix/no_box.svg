@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd">
+<svg version="1.1" baseProfile="basic" id="fortschrittsanzeige"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+	 viewBox="0 0 16 16" xml:space="preserve">
+<path id="quadrat" fill="none" stroke="#999999" stroke-width="3" stroke-linejoin="round" stroke-dasharray="2.9116,1.2617" d="
+	M4.613,1.654h6.775c1.638,0,2.958,1.202,2.958,2.695v7.301c0,1.492-1.32,2.695-2.958,2.695H4.613c-1.64,0-2.959-1.203-2.959-2.695
+	V4.35C1.654,2.856,2.974,1.654,4.613,1.654z"/>
+</svg>
