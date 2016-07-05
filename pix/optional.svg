@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd">
+<svg version="1.1" baseProfile="basic" id="fortschrittsanzeige"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+	 viewBox="0 0 16 16" xml:space="preserve">
+<g>
+	<polygon fill="#FFFFFF" points="12.596,15.273 7.985,11.788 3.364,15.259 5.136,9.629 0.526,6.143 6.233,6.152 8.004,0.525 
+		9.759,6.159 15.465,6.169 10.843,9.639 	"/>
+	<g>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="11.854,12.887 12.596,15.273 10.602,13.766 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="9.979,13.296 7.985,11.788 5.986,13.289 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="5.363,13.758 3.364,15.259 4.115,12.874 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="4.385,12.014 5.136,9.629 3.142,8.121 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="2.521,7.65 0.526,6.143 3.026,6.147 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="3.733,6.148 6.233,6.152 6.983,3.768 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="7.254,2.91 8.004,0.525 8.748,2.912 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="9.016,3.772 9.759,6.159 12.259,6.163 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="12.965,6.165 15.465,6.169 13.466,7.67 		"/>
+		<polyline fill="none" stroke="#64788B" stroke-linejoin="round" points="12.842,8.138 10.843,9.639 11.585,12.025 		"/>
+	</g>
+</g>
+</svg>
