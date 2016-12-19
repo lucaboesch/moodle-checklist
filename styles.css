@@ -32,7 +32,7 @@ ol.checklist .itemheading {
 }
 
 ol.checklist .itemblack {
-    color: #000;
+    color: #3c3c3c;
 }
 
 ol.checklist .itemblack.itemoptional {
@@ -40,15 +40,15 @@ ol.checklist .itemblack.itemoptional {
 }
 
 ol.checklist .itemred {
-    color: #f00;
+    color: #c88788;
 }
 
 ol.checklist .itemred.itemoptional {
-    color: #ffa0a0;
+    color: #ce8484;
 }
 
 ol.checklist .itemorange {
-    color: #ffba00;
+    color: #ffcc66;
 }
 
 ol.checklist .itemorange.itemoptional {
@@ -56,19 +56,19 @@ ol.checklist .itemorange.itemoptional {
 }
 
 ol.checklist .itemgreen {
-    color: #0f0;
+    color: #8caf82;
 }
 
 ol.checklist .itemgreen.itemoptional {
-    color: #a0ffa0;
+    color: #a5bda5;
 }
 
 ol.checklist .itempurple {
-    color: #d000ff;
+    color: #a087aa;
 }
 
 ol.checklist .itempurple.itemoptional {
-    color: #d0a0ff;
+    color: #b9a3c0;
 }
 
 ol.checklist .teachercomment {
