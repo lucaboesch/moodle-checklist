@@ -165,15 +165,18 @@ ol.checklist li .itemteachername {
 }
 
 .checklistreport .cell.level0-checked {
-    background-color: #0f0;
+    background-color: #b0ffb0;
+}
+.checklistreport .cell.level0-checked .text-success {
+    color: #095c09!important;
 }
 
 .checklistreport .cell.level1-checked {
-    background-color: #00df00;
+    background-color: #98c193;
 }
 
 .checklistreport .cell.level2-checked {
-    background-color: #00bf00;
+    background-color: #229b15;
 }
 
 .checklistreport .cell.level0-unchecked {
