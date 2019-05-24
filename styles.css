@@ -48,7 +48,7 @@ ol.checklist .itemred.itemoptional {
 }
 
 ol.checklist .itemorange {
-    color: #ffcc66;
+    color: #fc6;
 }
 
 ol.checklist .itemorange.itemoptional {
@@ -165,15 +165,18 @@ ol.checklist li .itemteachername {
 }
 
 .checklistreport .cell.level0-checked {
-    background-color: #0f0;
+    background-color: #b0ffb0;
+}
+.checklistreport .cell.level0-checked .text-success {
+    color: #095c09 !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .checklistreport .cell.level1-checked {
-    background-color: #00df00;
+    background-color: #98c193;
 }
 
 .checklistreport .cell.level2-checked {
-    background-color: #00bf00;
+    background-color: #229b15;
 }
 
 .checklistreport .cell.level0-unchecked {
@@ -307,6 +310,6 @@ ol.checklist label {
 #page-mod-checklist-edit a img.icon,
 #page-mod-checklist-report a img.icon,
 #page-mod-checklist-view a img.icon {
-     width: 16px;
-     height: 16px;
- }
+    width: 16px;
+    height: 16px;
+}
