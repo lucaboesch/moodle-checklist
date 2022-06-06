@@ -48,7 +48,7 @@ ol.checklist .itemred.itemoptional {
 }
 
 ol.checklist .itemorange {
-    color: #ffcc66;
+    color: #fc6;
 }
 
 ol.checklist .itemorange.itemoptional {
@@ -168,7 +168,7 @@ ol.checklist li .itemteachername {
     background-color: #b0ffb0;
 }
 .checklistreport .cell.level0-checked .text-success {
-    color: #095c09!important;
+    color: #095c09 !important;
 }
 
 .checklistreport .cell.level1-checked {
