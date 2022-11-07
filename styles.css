@@ -168,7 +168,7 @@ ol.checklist li .itemteachername {
     background-color: #b0ffb0;
 }
 .checklistreport .cell.level0-checked .text-success {
-    color: #095c09 !important;
+    color: #095c09 !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .checklistreport .cell.level1-checked {
