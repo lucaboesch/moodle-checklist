@@ -1784,7 +1784,8 @@ class checklist_class {
                                 $sely = ($teachermark == CHECKLIST_TEACHERMARK_YES) ? 'selected="selected" ' : '';
                                 $seln = ($teachermark == CHECKLIST_TEACHERMARK_NO) ? 'selected="selected" ' : '';
 
-                                $img = '<select name="items_' . $userid . '[' . $checkid . ']" ' . $disabled . '>';
+                                $img = '<select name="items_' . $userid . '[' . $checkid . ']" ' . $disabled .
+                                    ' class="form-control">';
                                 $img .= '<option value="' . CHECKLIST_TEACHERMARK_UNDECIDED . '" ' . $selu . '></option>';
                                 $img .= '<option value="' . CHECKLIST_TEACHERMARK_YES . '" ' . $sely . '>' .
                                     get_string('yes') . '</option>';
