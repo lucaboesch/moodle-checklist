@@ -1064,7 +1064,7 @@ class mod_checklist_renderer extends plugin_renderer_base {
 </script>
 ENDSCRIPT;
 
-        return html_writer::span($out, 'checklistformitem');
+        return html_writer::div($out, 'form-group mb-3');
     }
 
     /**
@@ -1114,7 +1114,7 @@ ENDSCRIPT;
             $attr
         );
 
-        return html_writer::span($out, 'checklistformitem');
+        return html_writer::div($out, 'form-group mt-3 mb-3');
     }
 
     /**
@@ -1139,7 +1139,7 @@ ENDSCRIPT;
             ['id' => 'id_grouping']
         );
 
-        return html_writer::span($out, 'checklistformitem');
+        return html_writer::div($out, 'form-group mb-3');
     }
 
     /**
@@ -1157,7 +1157,7 @@ ENDSCRIPT;
 
         $out .= '<li class="checklist-edititem ' . $inline . '">';
         if ($addingatend) {
-            $out .= '<form action="' . $thispageurl->out_omit_querystring() . '" class="' . $inline . '" method="post">';
+            $out .= '<form action="' . $thispageurl->out_omit_querystring() . '" class="form-horizontal" method="post">';
             $out .= html_writer::input_hidden_params($thispageurl);
         }
 
