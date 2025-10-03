@@ -85,7 +85,7 @@ class mod_checklist_renderer extends plugin_renderer_base {
 
         $out .= html_writer::span(
             $heading . $progress,
-            'checklist_progress_bar',
+            'checklist_progress_bar mt-3',
             ['id' => $spanid]
         );
 
@@ -141,6 +141,32 @@ class mod_checklist_renderer extends plugin_renderer_base {
             return 'mb-3';
         }
         return 'form-control';
+    }
+
+    /**
+     * Get the class to use for form checkboxes.
+     *
+     * @return string
+     */
+    private static function form_checkbox_class(): string {
+        global $CFG;
+        if ($CFG->branch >= 500) {
+            return 'form-check-input';
+        }
+        return 'checkbox-inline';
+    }
+
+    /**
+     * Get the class to use for form select elements.
+     *
+     * @return string
+     */
+    private static function form_select_class(): string {
+        global $CFG;
+        if ($CFG->branch >= 500) {
+            return 'custom-select';
+        }
+        return 'form-select';
     }
 
     /**
@@ -365,8 +391,8 @@ class mod_checklist_renderer extends plugin_renderer_base {
                         if ($status->is_viewother() && $status->is_showteachermark()) {
                             $id = '';
                         }
-                        $out .= '<input class="checklistitem' . $checkclass . '" type="checkbox" data-cmid="' . $cmid . '"' .
-                            ' class="checkbox-inline" name="items[]" ' . $id . $checked .
+                        $out .= '<input class="checklistitem' . $checkclass . ' ' . self::form_checkbox_class() .
+                            '" type="checkbox" data-cmid="' . $cmid . '" name="items[]" ' . $id . $checked .
                             ' value="' . $item->id . '" />';
                     }
                 }
@@ -480,8 +506,8 @@ class mod_checklist_renderer extends plugin_renderer_base {
                                 $out .= '<li>';
                                 $out .= '<div style="float: left;">';
                                 if ($status->is_showcheckbox()) {
-                                    $out .= '<input class="checklistitem itemoptional checkbox-inline" type="checkbox"' .
-                                        ' name="items[]" data-cmid="' . $cmid . '" id=' .
+                                    $out .= '<input class="checklistitem itemoptional ' . self::form_checkbox_class() .
+                                        '" type="checkbox" name="items[]" data-cmid="' . $cmid . '" id=' .
                                         $itemname . $checked . ' disabled="disabled" value="' . $useritem->id . '" />';
                                 }
                                 $out .= '<form style="display:inline" class="' . $inline . '" action="' .
@@ -513,8 +539,8 @@ class mod_checklist_renderer extends plugin_renderer_base {
                             } else {
                                 $out .= '<li>';
                                 if ($status->is_showcheckbox()) {
-                                    $out .= '<input class="checklistitem itemoptional checkbox-inline" type="checkbox"' .
-                                        ' name="items[]" data-cmid="' . $cmid . '" id=' .
+                                    $out .= '<input class="checklistitem itemoptional ' . self::form_checkbox_class() .
+                                        '" type="checkbox" name="items[]" data-cmid="' . $cmid . '" id=' .
                                         $itemname . $checked . ' value="' . $useritem->id . '" />';
                                 }
                                 $splittext = explode("\n", s($useritem->displaytext), 2);
@@ -568,7 +594,7 @@ class mod_checklist_renderer extends plugin_renderer_base {
                         '" method="post">';
                     $out .= html_writer::input_hidden_params($thisitemurl);
                     if ($status->is_showcheckbox()) {
-                        $out .= '<input type="checkbox" class="checkbox-inline" disabled="disabled" />';
+                        $out .= '<input type="checkbox" class="' . self::form_checkbox_class() . '" disabled="disabled" />';
                     }
                     $out .= '<input type="text" class="' . self::form_control_class() . ' form-text-inline" size="' .
                         CHECKLIST_TEXT_INPUT_WIDTH . '" name="displaytext" value="" id="additembox" />';
@@ -795,7 +821,7 @@ class mod_checklist_renderer extends plugin_renderer_base {
                         $item->id,
                         false,
                         '',
-                        ['title' => $item->displaytext, 'class' => 'checkbox-inline']
+                        ['title' => $item->displaytext, 'class' => self::form_checkbox_class()]
                     );
                 }
                 $out .= html_writer::end_span();
@@ -1040,7 +1066,7 @@ class mod_checklist_renderer extends plugin_renderer_base {
 
         // Disabled checkbox.
         $attr = [
-            'type' => 'checkbox', 'class' => 'checkbox-inline', 'name' => 'duetimedisable',
+            'type' => 'checkbox', 'class' => self::form_checkbox_class(), 'name' => 'duetimedisable',
             'id' => "timeduedisable{$id}", 'onclick' => "toggledate{$id}()",
         ];
         if ($disabled) {
