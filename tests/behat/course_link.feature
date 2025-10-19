@@ -21,8 +21,7 @@ Feature: A teacher can link a checklist item to a course
       | linkcourses      | 1 | mod_checklist |
       | enablecompletion | 1 |               |
     And I log in as "teacher1"
-    And I am on "Course 1" course homepage
-    And I turn editing mode on
+    And I am on "Course 1" course homepage with editing mode on
     And I add a checklist activity to course "Course 1" section 1 and I fill the form with:
       | Checklist                                  | Test checklist       |
       | Introduction                               | This is a checklist  |
