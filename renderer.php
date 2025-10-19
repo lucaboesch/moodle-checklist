@@ -997,6 +997,8 @@ class mod_checklist_renderer extends plugin_renderer_base {
      * @throws coding_exception
      */
     protected function edit_date_form($ts = 0) {
+        global $CFG;
+
         $out = '';
 
         $out .= '<br>';
@@ -1064,7 +1066,11 @@ class mod_checklist_renderer extends plugin_renderer_base {
 </script>
 ENDSCRIPT;
 
-        return html_writer::div($out, 'form-group mb-3');
+        if ($CFG->version >= 2024041400) {
+            return html_writer::div($out, 'mb-3');
+        } else {
+            return html_writer::div($out, 'form-group mb-3');
+        }
     }
 
     /**
@@ -1114,7 +1120,11 @@ ENDSCRIPT;
             $attr
         );
 
-        return html_writer::div($out, 'form-group mt-3 mb-3');
+        if ($CFG->version >= 2024041400) {
+            return html_writer::div($out, 'mt-3 mb-3');
+        } else {
+            return html_writer::div($out, 'form-group mt-3 mb-3');
+        }
     }
 
     /**
@@ -1139,7 +1149,11 @@ ENDSCRIPT;
             ['id' => 'id_grouping']
         );
 
-        return html_writer::div($out, 'form-group mb-3');
+        if ($CFG->version >= 2024041400) {
+            return html_writer::div($out, 'mb-3');
+        } else {
+            return html_writer::div($out, 'form-group mb-3');
+        }
     }
 
     /**
